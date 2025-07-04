@@ -22,7 +22,7 @@ function App() {
     let dataString = response.candidates[0].content.parts[0].text;
     dataString = dataString.split("* ");
     dataString = dataString.map((item) => item.trim());
-    console.log(dataString);
+    // console.log(dataString);
     setResult(dataString);
     
   }
@@ -32,7 +32,7 @@ function App() {
       <div className="col-span-1 bg-zinc-800 h-screen"></div>
       <div className="col-span-4 bg-zinc-900 h-screen">
         <div className="container h-150 overflow-y-scroll text-ellipsis">
-          <div className="text-white text-center">
+          <div className="text-zinc-300">
             {/* {result} */}
             <ul>
               {result &&
